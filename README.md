@@ -1,1 +1,1 @@
-# SoftUni-Work
+# SoftUni Homework Solutions
