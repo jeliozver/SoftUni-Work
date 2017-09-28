@@ -1,4 +1,4 @@
-﻿namespace P14_Magic_Letter
+namespace P14_Magic_Letter
 {
     using System;
 
@@ -16,11 +16,7 @@
                 {
                     for (char k = firstLetter; k <= secondLetter; k++)
                     {
-                        if (i == thirdLetter || j == thirdLetter || k == thirdLetter)
-                        {
-
-                        }
-                        else
+                        if (i != thirdLetter && j != thirdLetter && k != thirdLetter)
                         {
                             Console.Write($"{i}{j}{k} ");
                         }
