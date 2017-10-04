@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>New String Method</Title>
+            <Shortcut>nstrm</Shortcut>
+            <Description>Code snippet for New String Method</Description>
+            <Author>Jeliozver</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID></ID>
+                    <Default>i</Default>
+                    <ToolTip></ToolTip>
+                </Literal>
+                <Literal>
+                    <ID></ID>
+                    <Default></Default>
+                    <ToolTip></ToolTip>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[static string NewString(string str, int count)
+        {
+            string body = string.Empty;
+
+            for (int i = 0; i < count; i++)
+            {
+                body = body + str;
+            }
+            return body;
+        }$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
