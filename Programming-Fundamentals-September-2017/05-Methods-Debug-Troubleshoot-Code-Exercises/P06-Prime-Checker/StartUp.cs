@@ -7,6 +7,7 @@
         public static void Main()
         {
             long n = long.Parse(Console.ReadLine());
+
             Console.WriteLine(IsPrime(n));
         }
 
