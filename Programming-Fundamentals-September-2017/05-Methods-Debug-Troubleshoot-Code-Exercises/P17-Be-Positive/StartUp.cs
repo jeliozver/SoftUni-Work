@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace P17_Be_Positive
+﻿namespace P17_Be_Positive
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +15,6 @@ namespace P17_Be_Positive
 
         private static List<int> RemoveWhiteSpaces(string input)
         {
-           
             input = Regex.Replace(input, " {2,}", " ").Trim();
             string[] parameters = input.Split(' ');
 
@@ -66,7 +63,6 @@ namespace P17_Be_Positive
                         }
                         catch (Exception)
                         {
-
                         }
 
                         if (currentNum >= 0)
@@ -77,14 +73,11 @@ namespace P17_Be_Positive
                             }
 
                             Console.Write(currentNum);
-                            j++;
 
                             found = true;
                         }
-                        else
-                        {
-                            j++;
-                        }
+
+                        j++;
                     }
                 }
 
