@@ -1,18 +1,8 @@
 ﻿namespace P07_Sales_Report
 {
     using System;
-    using System.Linq;
     using System.Collections.Generic;
-
-    public class Sale
-    {
-        public string Town { get; set; }
-        public string Product { get; set; }
-        public decimal Price { get; set; }
-        public decimal Quantity { get; set; }
-
-        public decimal SaleResult => Price * Quantity;
-    }
+    using System.Linq;
 
     public class StartUp
     {

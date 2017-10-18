@@ -2,17 +2,6 @@
 {
     using System;
     using System.Linq;
-    public class Rectangle
-    {
-        public int Top { get; set; }
-        public int Left { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-
-        public int Right => Left + Width;
-        public int Bottom => Top + Height;
-
-    }
 
     public class StartUp
     {
@@ -21,8 +10,8 @@
             var first = ReadRectangle();
             var second = ReadRectangle();
 
-            Console.WriteLine(IsFirstInsideSecond(first, second) 
-                ? "Inside" 
+            Console.WriteLine(IsFirstInsideSecond(first, second)
+                ? "Inside"
                 : "Not inside");
         }
 
@@ -43,11 +32,11 @@
                 .Split(' ')
                 .Select(int.Parse)
                 .ToArray();
-            
+
             var rectangle = new Rectangle
             {
                 Left = input[0],
-                Top =  input[1],
+                Top = input[1],
                 Width = input[2],
                 Height = input[3]
             };

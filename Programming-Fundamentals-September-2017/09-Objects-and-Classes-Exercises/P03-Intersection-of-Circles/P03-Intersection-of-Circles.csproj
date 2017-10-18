@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0ED66ED-46C9-4860-A395-F667F04A40B2}</ProjectGuid>
+    <ProjectGuid>{A28C8423-89F5-45A9-8D1A-C8515D822C79}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P05_Closest_Two_Points</RootNamespace>
-    <AssemblyName>P05-Closest-Two-Points</AssemblyName>
+    <RootNamespace>P03_Intersection_of_Circles</RootNamespace>
+    <AssemblyName>P03-Intersection-of-Circles</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circle.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

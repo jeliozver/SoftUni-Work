@@ -1,13 +1,7 @@
-﻿namespace P04_Distance_Between_Podoubles
+﻿namespace P04_Distance_Between_Points
 {
     using System;
     using System.Linq;
-
-    public class Point
-    {
-        public double X { get; set; }
-        public double Y { get; set; }
-    }
 
     public class StartUp
     {

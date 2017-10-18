@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0ED66ED-46C9-4860-A395-F667F04A40B2}</ProjectGuid>
+    <ProjectGuid>{C121D308-944D-4ABD-9693-BCEEBA998EAF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P05_Closest_Two_Points</RootNamespace>
-    <AssemblyName>P05-Closest-Two-Points</AssemblyName>
+    <RootNamespace>P07_Andrey_and_Billiard</RootNamespace>
+    <AssemblyName>P07-Andrey-and-Billiard</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Point.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0ED66ED-46C9-4860-A395-F667F04A40B2}</ProjectGuid>
+    <ProjectGuid>{E6737521-46DA-45D3-8B95-D169C370BA30}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P05_Closest_Two_Points</RootNamespace>
-    <AssemblyName>P05-Closest-Two-Points</AssemblyName>
+    <RootNamespace>P05_Book_Library</RootNamespace>
+    <AssemblyName>P05-Book-Library</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Point.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Library.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
