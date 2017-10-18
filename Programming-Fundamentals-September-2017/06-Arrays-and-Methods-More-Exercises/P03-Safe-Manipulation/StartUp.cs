@@ -43,7 +43,7 @@
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input!"); // Check if the command action is invalid
+                    Console.WriteLine("Invalid input!");
                 }
 
                 command = Console.ReadLine()

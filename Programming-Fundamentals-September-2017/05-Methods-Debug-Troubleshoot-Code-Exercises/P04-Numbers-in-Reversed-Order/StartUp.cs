@@ -10,7 +10,7 @@
             Console.WriteLine(ReverseString(input));
         }
 
-        private static string ReverseString(string stringToReverse)
+        public static string ReverseString(string stringToReverse)
         {
             string stringReversed = string.Empty;
 

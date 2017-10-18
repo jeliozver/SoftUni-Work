@@ -19,7 +19,7 @@
                                             x1PairTwo, y1PairTwo, x2PairTwo, y2PairTwo));
         }
 
-        private static string GetClosestPointToTheCenter(double x1, double y1, double x2, double y2)
+        public static string GetClosestPointToTheCenter(double x1, double y1, double x2, double y2)
         {
             string closestPoint = String.Empty;
             double pointOneDistance = Math.Sqrt(Math.Pow((0 - x1), 2) + Math.Pow((0 - y1), 2));
@@ -32,13 +32,13 @@
             return closestPoint;
         }
 
-        private static double CalculateLineLenght(double x1, double y1, double x2, double y2)
+        public static double CalculateLineLenght(double x1, double y1, double x2, double y2)
         {
             double lineLenght = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             return lineLenght;
         }
 
-        private static string GetLongerLine(double x1PairOne, double y1PairOne,
+        public static string GetLongerLine(double x1PairOne, double y1PairOne,
                                             double x2PairOne, double y2PairOne,
                                             double x1PairTwo, double y1PairTwo,
                                             double x2PairTwo, double y2PairTwo)

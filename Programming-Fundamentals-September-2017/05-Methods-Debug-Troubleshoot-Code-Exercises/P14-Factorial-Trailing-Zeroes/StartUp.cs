@@ -11,7 +11,7 @@
             Console.WriteLine(CalcTrailingZeroes(number));
         }
 
-        private static BigInteger CalcFactorial(int number)
+        public static BigInteger CalcFactorial(int number)
         {
             BigInteger factorial = 1;
 
@@ -24,7 +24,7 @@
             return factorial;
         }
 
-        private static BigInteger CalcTrailingZeroes(int number)
+        public static BigInteger CalcTrailingZeroes(int number)
         {
             int trailingZerosCount = 0;
             BigInteger numToCheck = CalcFactorial(number);

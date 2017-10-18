@@ -31,7 +31,7 @@
             Console.WriteLine(string.Join(" ", sumArray));
         }
 
-        private static int[] ExtractPartOfArray(int[] array, int startIndex, int endIndex)
+        public static int[] ExtractPartOfArray(int[] array, int startIndex, int endIndex)
         {
             int[] extractedArray = new int[endIndex];
 

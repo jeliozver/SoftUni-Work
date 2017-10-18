@@ -32,7 +32,7 @@
             Console.WriteLine(workingDays);
         }
 
-        private static bool IsHolidayInBulgaria(DateTime date)
+        public static bool IsHolidayInBulgaria(DateTime date)
         {
             string dateAsString = $"{date.Day}-{date.Month}";
 

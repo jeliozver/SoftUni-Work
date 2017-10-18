@@ -10,7 +10,7 @@
             Console.WriteLine($"{FahrenheitToCelsius(fahrenheit):f2}");
         }
 
-        private static double FahrenheitToCelsius(double fahrenheit)
+        public static double FahrenheitToCelsius(double fahrenheit)
         {
             return (fahrenheit - 32) * 5 / 9;
         }

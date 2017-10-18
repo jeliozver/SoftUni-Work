@@ -14,7 +14,7 @@
             Console.WriteLine(GetClosestPointToTheCenter(x1, y1, x2, y2));
         }
 
-        private static string GetClosestPointToTheCenter(double x1, double y1, double x2, double y2)
+        public static string GetClosestPointToTheCenter(double x1, double y1, double x2, double y2)
         {
             string closestPoint = String.Empty;
             double pointOneDistance = Math.Sqrt(Math.Pow((0 - x1), 2) + Math.Pow((0 - y1), 2));

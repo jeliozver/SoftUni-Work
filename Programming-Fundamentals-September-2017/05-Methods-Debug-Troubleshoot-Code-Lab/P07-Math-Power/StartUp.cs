@@ -12,7 +12,7 @@
             Console.WriteLine(CalculateMathPower(number, power));
         }
 
-        private static double CalculateMathPower(double num, double pow)
+        public static double CalculateMathPower(double num, double pow)
         {
             double result = Math.Pow(num, pow);
             return result;

@@ -31,7 +31,7 @@
             }
         }
 
-        static int GetMax(int first, int second)
+        public static int GetMax(int first, int second)
         {
             if (first >= second)
             {
@@ -43,7 +43,7 @@
             }
         }
 
-        static char GetMax(char first, char second)
+        public static char GetMax(char first, char second)
         {
             if (first >= second)
             {
@@ -55,7 +55,7 @@
             }
         }
 
-        static string GetMax(string first, string second)
+        public static string GetMax(string first, string second)
         {
             if (first.CompareTo(second) >= 0)
             {

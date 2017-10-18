@@ -10,7 +10,7 @@
             Console.WriteLine(GetName(name));
         }
 
-        private static string GetName(string name)
+        public static string GetName(string name)
         {
             string printName = $"Hello, {name}!";
             return printName;

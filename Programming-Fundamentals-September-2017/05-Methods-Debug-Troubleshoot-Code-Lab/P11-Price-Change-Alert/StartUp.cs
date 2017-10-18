@@ -4,7 +4,7 @@
 
     public class StartUp
     {
-        private static void Main()
+        public static void Main()
         {
             int numberOfPrices = int.Parse(Console.ReadLine());
             double threshold = double.Parse(Console.ReadLine());
@@ -23,7 +23,7 @@
             }
         }
 
-        private static string GetPriceChangeAlert(double currentPrice, double lastPrice, double priceDifference, bool isSignificantDifference)
+        public static string GetPriceChangeAlert(double currentPrice, double lastPrice, double priceDifference, bool isSignificantDifference)
         {
             string message = string.Empty;
 
@@ -47,7 +47,7 @@
             return message;
         }
 
-        private static bool CheckForSignificantDifference(double priceDifference, double threshold)
+        public static bool CheckForSignificantDifference(double priceDifference, double threshold)
         {
             if (Math.Abs(priceDifference) >= threshold)
             {
@@ -57,7 +57,7 @@
             return false;
         }
 
-        private static double GetPriceDifference(double lastPrice, double currentPrice)
+        public static double GetPriceDifference(double lastPrice, double currentPrice)
         {
             double priceDifference = (currentPrice - lastPrice) / lastPrice;
             return priceDifference;

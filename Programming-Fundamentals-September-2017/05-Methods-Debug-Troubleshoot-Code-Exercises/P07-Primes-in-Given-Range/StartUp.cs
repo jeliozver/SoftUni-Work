@@ -13,7 +13,7 @@
             Console.WriteLine(String.Join(", ", FindPrimesInRange(startNum, endNum)));
         }
 
-        private static bool IsPrime(int n)
+        public static bool IsPrime(int n)
         {
             if (n < 2) return false;
 
@@ -25,7 +25,7 @@
             return true;
         }
 
-        private static List<int> FindPrimesInRange(int startNum, int endNum)
+        public static List<int> FindPrimesInRange(int startNum, int endNum)
         {
             var primesInRange = new List<int>();
 

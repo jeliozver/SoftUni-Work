@@ -33,7 +33,7 @@
             PrintTeams(teamsRemaining, teamsDisbanded);
         }
 
-        private static List<Team> AddTeamsInfo()
+        public static List<Team> AddTeamsInfo()
         {
             var teams = new List<Team>();
 
@@ -73,7 +73,7 @@
             return teams;
         }
 
-        private static List<Team> AddMembersInfo(List<Team> teams)
+        public static List<Team> AddMembersInfo(List<Team> teams)
         {
             string joinRequest = Console.ReadLine();
 
@@ -114,7 +114,7 @@
             return teams;
         }
 
-        private static void PrintTeams(List<Team> teamsRemaining, List<string> teamsDisbanded)
+        public static void PrintTeams(List<Team> teamsRemaining, List<string> teamsDisbanded)
         {
             foreach (var team in teamsRemaining)
             {

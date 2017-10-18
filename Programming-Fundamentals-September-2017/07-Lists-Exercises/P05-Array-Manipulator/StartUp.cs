@@ -67,7 +67,7 @@
             Console.WriteLine($"[{string.Join(", ", numbers)}]");
         }
 
-        private static List<int> ShiftElements(List<int> array, int pos)
+        public static List<int> ShiftElements(List<int> array, int pos)
         {
             int positions = pos;
 
@@ -86,7 +86,7 @@
             return array;
         }
 
-        private static void IsContainsElementAtIndex(List<int> array, int element)
+        public static void IsContainsElementAtIndex(List<int> array, int element)
         {
             bool isIndexFound = false;
 
@@ -106,7 +106,7 @@
             }
         }
 
-        private static List<int> SumPairs(List<int> array)
+        public static List<int> SumPairs(List<int> array)
         {
             List<int> result = new List<int>();
 

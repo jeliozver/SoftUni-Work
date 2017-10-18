@@ -28,7 +28,7 @@
             Console.WriteLine(result);
         }
 
-        private static string ReverseElements(string stringToReverse)
+        public static string ReverseElements(string stringToReverse)
         {
             string stringReversed = string.Empty;
 

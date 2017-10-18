@@ -12,7 +12,7 @@
             Console.WriteLine(CalcFactorial(number));
         }
 
-        private static BigInteger CalcFactorial(int number)
+        public static BigInteger CalcFactorial(int number)
         {
             BigInteger factorial = 1;
 

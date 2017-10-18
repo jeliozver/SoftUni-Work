@@ -13,7 +13,7 @@
             PrintOnlyPositiveNumbersInSequence(countSequences);
         }
 
-        private static List<int> RemoveWhiteSpaces(string input)
+        public static List<int> RemoveWhiteSpaces(string input)
         {
             input = Regex.Replace(input, " {2,}", " ").Trim();
             string[] parameters = input.Split(' ');
@@ -29,7 +29,7 @@
             return numbers;
         }
 
-        private static void PrintOnlyPositiveNumbersInSequence(int countSequences)
+        public static void PrintOnlyPositiveNumbersInSequence(int countSequences)
         {
             for (int i = 0; i < countSequences; i++)
             {

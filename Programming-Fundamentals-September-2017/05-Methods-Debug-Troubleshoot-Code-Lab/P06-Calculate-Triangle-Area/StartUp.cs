@@ -12,7 +12,7 @@
             Console.WriteLine(area);
         }
 
-        static double GetTriangleArea(double a, double h)
+        public static double GetTriangleArea(double a, double h)
         {
             return (a * h) / 2;
         }

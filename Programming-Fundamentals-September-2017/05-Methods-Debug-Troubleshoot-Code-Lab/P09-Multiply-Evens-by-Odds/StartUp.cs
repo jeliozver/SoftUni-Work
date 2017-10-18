@@ -12,14 +12,14 @@
             Console.WriteLine(GetMultipleOfEvensAndOdds(numberAbsolute));
         }
 
-        private static int GetMultipleOfEvensAndOdds(int n)
+        public static int GetMultipleOfEvensAndOdds(int n)
         {
             int sumEvens = GetSumOfEvenDigits(n);
             int summOdds = GetSumOfOddDigits(n);
             return sumEvens * summOdds;
         }
 
-        private static int GetSumOfEvenDigits(int n)
+        public static int GetSumOfEvenDigits(int n)
         {
             int sum = 0;
             while (n > 0)
@@ -36,7 +36,7 @@
             return sum;
         }
 
-        private static int GetSumOfOddDigits(int n)
+        public static int GetSumOfOddDigits(int n)
         {
             int sum = 0;
             while (n > 0)

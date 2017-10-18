@@ -10,7 +10,7 @@
             Console.WriteLine(FibonacciIterative(n));
         }
 
-        private static int FibonacciIterative(int n)
+        public static int FibonacciIterative(int n)
         {
             if (n == 0) return 1;
             if (n == 1) return 1;
@@ -25,6 +25,7 @@
                 prevPrev = prev;
                 prev = result;
             }
+
             return result;
         }
     }

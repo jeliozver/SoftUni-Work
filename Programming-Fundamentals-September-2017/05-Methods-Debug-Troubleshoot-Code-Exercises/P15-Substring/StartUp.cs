@@ -12,7 +12,7 @@
             Substring(text, lettersToPrint);
         }
 
-        private static void Substring(string text, int lettersToPrint)
+        public static void Substring(string text, int lettersToPrint)
         {
             int matchLetter = 112; // ASCII Code of the letter 'p'
             bool hasMatch = false;

@@ -36,25 +36,25 @@
             }
         }
 
-        private static double CalcTriangleArea(double side, double height)
+        public static double CalcTriangleArea(double side, double height)
         {
             double triangleArea = side * height / 2;
             return triangleArea;
         }
 
-        private static double CalcSquareArea(double side)
+        public static double CalcSquareArea(double side)
         {
             double squareArea = Math.Pow(side, 2);
             return squareArea;
         }
 
-        private static double CalcRectangleArea(double width, double height)
+        public static double CalcRectangleArea(double width, double height)
         {
             double rectangleArea = width * height;
             return rectangleArea;
         }
 
-        private static double CalcCircleArea(double radius)
+        public static double CalcCircleArea(double radius)
         {
             double circleArea = Math.PI * Math.Pow(radius, 2);
             return circleArea;

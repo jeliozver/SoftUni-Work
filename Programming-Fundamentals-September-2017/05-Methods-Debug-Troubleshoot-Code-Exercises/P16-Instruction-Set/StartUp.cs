@@ -11,7 +11,7 @@
             InstructionSet(opCode);
         }
 
-        private static void InstructionSet(string opCode)
+        public static void InstructionSet(string opCode)
         {
             while (opCode != "END")
             {

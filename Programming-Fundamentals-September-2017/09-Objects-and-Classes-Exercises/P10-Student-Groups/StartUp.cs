@@ -15,7 +15,7 @@
             PrintGroup(groups, towns);
         }
 
-        private static List<Town> ReadTownsAndStudents()
+        public static List<Town> ReadTownsAndStudents()
         {
             var towns = new List<Town>();
 
@@ -78,7 +78,7 @@
             return towns;
         }
 
-        private static List<Group> DistributeIntoGroups(List<Town> towns)
+        public static List<Group> DistributeIntoGroups(List<Town> towns)
         {
             var groups = new List<Group>();
 
@@ -105,7 +105,7 @@
             return groups;
         }
 
-        private static void PrintGroup(List<Group> groups, List<Town> towns)
+        public static void PrintGroup(List<Group> groups, List<Town> towns)
         {
             Console.WriteLine($"Created {groups.Count} groups in {towns.Count} towns:");
 

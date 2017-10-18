@@ -10,7 +10,7 @@
             PrintSign(n);
         }
 
-        private static void PrintSign(int n)
+        public static void PrintSign(int n)
         {
             if (n > 0)
             {

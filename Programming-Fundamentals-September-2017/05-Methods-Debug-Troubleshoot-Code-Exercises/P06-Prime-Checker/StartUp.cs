@@ -11,7 +11,7 @@
             Console.WriteLine(IsPrime(n));
         }
 
-        private static bool IsPrime(long n)
+        public static bool IsPrime(long n)
         {
             if (n < 2) return false;
 

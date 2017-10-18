@@ -35,6 +35,10 @@
                     isArrayTwoFirst = true;
                     break;
                 }
+                if (arrayOne[i] != arrayTwo[i])
+                {
+                    break;
+                }
             }
 
             if (isArrayOneFirst)

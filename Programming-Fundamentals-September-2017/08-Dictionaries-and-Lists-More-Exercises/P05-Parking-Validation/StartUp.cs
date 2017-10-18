@@ -70,7 +70,7 @@
             }
         }
 
-        private static bool IsLicensePlateValid(string licensePlate)
+        public static bool IsLicensePlateValid(string licensePlate)
         {
             if (licensePlate.Length != 8)
             {
@@ -105,35 +105,25 @@
             return true;
         }
 
-        private static bool IsUserRegistered(string userName, Dictionary<string, string> database)
+        public static bool IsUserRegistered(string userName, Dictionary<string, string> database)
         {
-            if (database.ContainsKey(userName))
-            {
-                return false;
-            }
-            return true;
+            return !database.ContainsKey(userName);
         }
 
-        private static bool IsLicenseRegistered(string licensePlate, Dictionary<string, string> database)
+        public static bool IsLicenseRegistered(string licensePlate, Dictionary<string, string> database)
         {
-            if (database.ContainsValue(licensePlate))
-            {
-                return false;
-            }
-            return true;
+            return !database.ContainsValue(licensePlate);
         }
 
-        private static string GetRegLicense(string userName, Dictionary<string, string> database)
+        public static string GetRegLicense(string userName, Dictionary<string, string> database)
         {
             string result = string.Empty;
 
             foreach (var user in database)
             {
-                if (user.Key == userName)
-                {
-                    result = user.Value;
-                    break;
-                }
+                if (user.Key != userName) continue;
+                result = user.Value;
+                break;
             }
 
             return result;

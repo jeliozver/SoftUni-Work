@@ -17,7 +17,7 @@
             }
         }
 
-        private static bool IsPalindrome(int num)
+        public static bool IsPalindrome(int num)
         {
             int n = num;
             int rev = 0;
@@ -36,7 +36,7 @@
             return false;
         }
 
-        private static bool IsSumOfDigitsDivisibleBySeven(int num)
+        public static bool IsSumOfDigitsDivisibleBySeven(int num)
         {
             int sum = 0;
             while (num != 0)
@@ -53,7 +53,7 @@
             return false;
         }
 
-        private static bool ContainsEvenDigit(int num)
+        public static bool ContainsEvenDigit(int num)
         {
             while (num > 0)
             {

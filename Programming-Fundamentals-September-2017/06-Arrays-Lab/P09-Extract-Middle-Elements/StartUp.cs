@@ -2,6 +2,7 @@
 {
     using System;
     using System.Linq;
+
     public class StartUp
     {
         public static void Main()
@@ -14,9 +15,8 @@
             ExtractMiddleElements(array);
         }
 
-        private static void ExtractMiddleElements(long[] array)
+        public static void ExtractMiddleElements(long[] array)
         {
-
             int n = array.Length;
 
             if (n == 1)
@@ -28,7 +28,7 @@
                 long[] middleElementsEven = new long[2];
                 middleElementsEven[0] = array[n / 2 - 1];
                 middleElementsEven[1] = array[n / 2];
-               
+
                 Console.WriteLine($"{{ {string.Join(", ", middleElementsEven)} }}");
             }
             else

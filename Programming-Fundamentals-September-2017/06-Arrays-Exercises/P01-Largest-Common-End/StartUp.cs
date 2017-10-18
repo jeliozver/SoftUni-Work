@@ -23,7 +23,7 @@
             Console.WriteLine(Math.Max(matchesLeftCount, matchesRightCount));
         }
 
-        private static int CountEqualSections(string[] firstArray, string[] secondArray)
+        public static int CountEqualSections(string[] firstArray, string[] secondArray)
         {
             int shorterArray = Math.Min(firstArray.Length, secondArray.Length);
             int matches = 0;

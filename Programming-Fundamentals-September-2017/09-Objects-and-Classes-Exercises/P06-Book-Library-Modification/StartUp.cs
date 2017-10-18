@@ -48,7 +48,7 @@
             }
         }
 
-        private static Book GetBookInfo()
+        public static Book GetBookInfo()
         {
             string[] currentInfo = Console.ReadLine()
                 .Split(' ')

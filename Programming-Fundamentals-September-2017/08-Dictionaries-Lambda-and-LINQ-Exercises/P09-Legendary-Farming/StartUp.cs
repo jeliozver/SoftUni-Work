@@ -1,8 +1,7 @@
-﻿using System.Linq;
-
-namespace P09_Legendary_Farming
+﻿namespace P09_Legendary_Farming
 {
     using System;
+    using System.Linq;
     using System.Collections.Generic;
 
     public class StartUp
@@ -53,14 +52,14 @@ namespace P09_Legendary_Farming
                             isLegendaryItem = true;
                             break;
                         }
-                        else if (mat.Key == "fragments" && mat.Value >= 250)
+                        if (mat.Key == "fragments" && mat.Value >= 250)
                         {
                             legendaryItem = "Valanyr obtained!";
                             keyMaterials[material] -= 250;
                             isLegendaryItem = true;
                             break;
                         }
-                        else if (mat.Key == "motes" && mat.Value >= 250)
+                        if (mat.Key == "motes" && mat.Value >= 250)
                         {
                             legendaryItem = "Dragonwrath obtained!";
                             keyMaterials[material] -= 250;

@@ -19,7 +19,7 @@
 
         }
 
-        private static double GetMaxValue(int[] array)
+        public static double GetMaxValue(int[] array)
         {
             int maxValue = int.MinValue;
 
@@ -31,7 +31,7 @@
             return maxValue;
         }
 
-        private static double GetMinValue(int[] array)
+        public static double GetMinValue(int[] array)
         {
             int minValue = int.MaxValue;
 
@@ -43,7 +43,7 @@
             return minValue;
         }
 
-        private static double GetSumOfElements(int[] array)
+        public static double GetSumOfElements(int[] array)
         {
             int sum = 0;
 
@@ -55,7 +55,7 @@
             return sum;
         }
 
-        private static double GetAverageValue(int[] array)
+        public static double GetAverageValue(int[] array)
         {
             double sum = GetSumOfElements(array);
             double average = sum / array.Length;

@@ -13,12 +13,12 @@
             PrintHeaderFooter(n);
         }
 
-        static void PrintHeaderFooter(int n)
+        public static void PrintHeaderFooter(int n)
         {
             Console.WriteLine(new string('-', 2 * n));
         }
 
-        static void PrintMiddleRow(int n)
+        public static void PrintMiddleRow(int n)
         {
             for (int i = 1; i <= n - 2; i++)
             {

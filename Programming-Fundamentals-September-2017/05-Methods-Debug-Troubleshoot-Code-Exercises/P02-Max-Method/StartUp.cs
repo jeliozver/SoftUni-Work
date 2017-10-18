@@ -13,7 +13,7 @@
             Console.WriteLine(Math.Max(GetMax(numberOne, numberTwo), numberThree));
         }
 
-        private static int GetMax(int a, int b)
+        public static int GetMax(int a, int b)
         {
             int maxFromNumOneNumTwo = Math.Max(a, b);
             return maxFromNumOneNumTwo;

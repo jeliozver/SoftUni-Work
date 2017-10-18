@@ -9,25 +9,25 @@
             PrintReceipt();
         }
 
-        private static void PrintReceiptHeader()
+        public static void PrintReceiptHeader()
         {
             Console.WriteLine("CASH RECEIPT");
             Console.WriteLine("------------------------------");
         }
 
-        private static void PrintReceiptBody()
+        public static void PrintReceiptBody()
         {
             Console.WriteLine("Charged to____________________");
             Console.WriteLine("Received by___________________");
         }
 
-        private static void PrintReceiptFooter()
+        public static void PrintReceiptFooter()
         {
             Console.WriteLine("------------------------------");
             Console.WriteLine("\u00A9 SoftUni");
         }
 
-        private static void PrintReceipt()
+        public static void PrintReceipt()
         {
             PrintReceiptHeader();
             PrintReceiptBody();

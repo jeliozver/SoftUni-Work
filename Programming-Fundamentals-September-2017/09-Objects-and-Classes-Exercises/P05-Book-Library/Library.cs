@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    internal class Library
+    public class Library
     {
         public string Name { get; set; }
         public List<Book> Books { get; set; }

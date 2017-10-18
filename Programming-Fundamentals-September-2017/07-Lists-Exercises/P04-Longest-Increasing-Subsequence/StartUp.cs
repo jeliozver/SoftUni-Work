@@ -15,7 +15,7 @@
             GetLIS(numbers);
         }
 
-        private static void GetLIS(int[] sequence)
+        public static void GetLIS(int[] sequence)
         {
             if (sequence.Length == 1)
             {
