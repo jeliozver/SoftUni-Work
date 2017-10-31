@@ -1,4 +1,4 @@
-﻿namespace P04_Winning_Ticket
+namespace P04_Winning_Ticket
 {
     using System;
     using System.Collections.Generic;
@@ -10,6 +10,7 @@
         public static void Main()
         {
             var nastyInputSplitter = new Regex(@"\s+,\s+|,\s+|\s+,|\t|\r|\n");
+            string pattern = @"\${6,9}|\#{6,9}|\^{6,9}|\@{6,9}";
             var ticketsList = new List<string>();
 
             string tickets = Console.ReadLine();
@@ -30,14 +31,6 @@
                     bool atSignJackpot = new string('@', 20) == ticket;
                     bool caretSignJackpot = new string('^', 20) == ticket;
 
-                    var numberSignMatches = Regex.Matches(ticket, @"\#{6,9}");
-                    var dollarSignMatches = Regex.Matches(ticket, @"\${6,9}");
-                    var atSignMatches = Regex.Matches(ticket, @"\@{6,9}");
-                    var caretSignMatches = Regex.Matches(ticket, @"\^{6,9}");
-
-                    bool isTicketWinning = numberSignMatches.Count == 2 || dollarSignMatches.Count == 2 ||
-                                           atSignMatches.Count == 2 || caretSignMatches.Count == 2;
-
                     bool isJackpot = numberSignJackpot || dollarSignJackpot ||
                         atSignJackpot || caretSignJackpot;
 
@@ -45,30 +38,28 @@
                     {
                         result = $"ticket \"{ticket}\" - 10{ticket[0]} Jackpot!";
                     }
-                    else if (!isTicketWinning)
-                    {
-                        result = $"ticket \"{ticket}\" - no match";
-                    }
                     else
                     {
                         var firstHalf = ticket.Substring(0, 10);
                         var secondHalf = ticket.Substring(10);
 
-                        string pattern = @"\${6,9}|\#{6,9}|\^{6,9}|\@{6,9}";
-
                         var firstHalfMatch = Regex.Match(firstHalf, pattern);
                         var secondHalfMatch = Regex.Match(secondHalf, pattern);
+                        string matchStr = firstHalfMatch.ToString();
 
-                        var match = Regex.Match(secondHalf, @"\${6,9}|\#{6,9}|\^{6,9}|\@{6,9}");
-
-                        if (firstHalfMatch.Length <= secondHalfMatch.Length)
+                        if (firstHalfMatch.Length == 0 || secondHalfMatch.Length == 0)
                         {
-                            match = Regex.Match(firstHalf, @"\${6,9}|\#{6,9}|\^{6,9}|\@{6,9}");
+                            result = $"ticket \"{ticket}\" - no match";
                         }
+                        else
+                        {
+                            if (firstHalfMatch.Length >= secondHalfMatch.Length)
+                            {
+                                matchStr = secondHalfMatch.ToString();
+                            }
 
-                        string matchStr = match.ToString();
-
-                        result = $"ticket \"{ticket}\" - {matchStr.Length}{matchStr[0]}";
+                            result = $"ticket \"{ticket}\" - {matchStr.Length}{matchStr[0]}";
+                        }
                     }
                 }
                 else
