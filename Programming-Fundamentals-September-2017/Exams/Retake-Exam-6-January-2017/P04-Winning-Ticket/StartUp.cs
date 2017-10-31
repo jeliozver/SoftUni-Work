@@ -47,7 +47,8 @@ namespace P04_Winning_Ticket
                         var secondHalfMatch = Regex.Match(secondHalf, pattern);
                         var shortestMatchCount = Math.Min(firstHalfMatch.Length, secondHalfMatch.Length);
 
-                        if (firstHalfMatch.Length == 0 || secondHalfMatch.Length == 0)
+                        if (firstHalfMatch.Length == 0 || secondHalfMatch.Length == 0 || 
+                            firstHalfMatch.ToString()[0] != secondHalfMatch.ToString()[0])
                         {
                             result = $"ticket \"{ticket}\" - no match";
                         }
