@@ -1,4 +1,4 @@
-namespace P04_Winning_Ticket
+﻿namespace P04_Winning_Ticket
 {
     using System;
     using System.Collections.Generic;
