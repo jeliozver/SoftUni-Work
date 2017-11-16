@@ -1,4 +1,4 @@
-﻿namespace P03_Matrix_Operator
+namespace P03_Matrix_Operator
 {
     using System;
     using System.Collections.Generic;
@@ -62,10 +62,12 @@
             {
                 case "row":
                     if (pseudoMatrix[index] == string.Empty) return pseudoMatrix;
+
                     var row = pseudoMatrix[index]
                         .Split(' ')
                         .Select(int.Parse)
                         .ToArray();
+
                     var builder = new StringBuilder();
 
                     switch (type)
@@ -107,19 +109,13 @@
                             break;
                     }
 
-                    pseudoMatrix[index] = builder.ToString().TrimEnd(' ');
+                    pseudoMatrix[index] = builder
+                        .ToString()
+                        .TrimEnd(' ');
                     break;
 
                 case "col":
-                    switch (type)
-                    {
-                        case "positive":
-                        case "negative":
-                        case "even":
-                        case "odd":
-                            pseudoMatrix = RemoveColElements(pseudoMatrix, type, index);
-                            break;
-                    }
+                    pseudoMatrix = RemoveColElements(pseudoMatrix, type, index);
                     break;
             }
 
@@ -155,37 +151,36 @@
                 {
                     if (i == index)
                     {
-                        if (type == "positive")
+                        switch (type)
                         {
-                            if (currentRow[i] < 0)
-                            {
-                                builder.Append(currentRow[i]);
-                                builder.Append(" ");
-                            }
-                        }
-                        else if (type == "negative")
-                        {
-                            if (currentRow[i] >= 0)
-                            {
-                                builder.Append(currentRow[i]);
-                                builder.Append(" ");
-                            }
-                        }
-                        else if (type == "even")
-                        {
-                            if (currentRow[i] % 2 !=0)
-                            {
-                                builder.Append(currentRow[i]);
-                                builder.Append(" ");
-                            }
-                        }
-                        else if (type == "odd")
-                        {
-                            if (currentRow[i] % 2 == 0)
-                            {
-                                builder.Append(currentRow[i]);
-                                builder.Append(" ");
-                            }
+                            case "positive":
+                                if (currentRow[i] < 0)
+                                {
+                                    builder.Append(currentRow[i]);
+                                    builder.Append(" ");
+                                }
+                                break;
+                            case "negative":
+                                if (currentRow[i] >= 0)
+                                {
+                                    builder.Append(currentRow[i]);
+                                    builder.Append(" ");
+                                }
+                                break;
+                            case "even":
+                                if (currentRow[i] % 2 != 0)
+                                {
+                                    builder.Append(currentRow[i]);
+                                    builder.Append(" ");
+                                }
+                                break;
+                            case "odd":
+                                if (currentRow[i] % 2 == 0)
+                                {
+                                    builder.Append(currentRow[i]);
+                                    builder.Append(" ");
+                                }
+                                break;
                         }
                     }
                     else
@@ -195,7 +190,9 @@
                     }
                 }
 
-                result.Add(builder.ToString().TrimEnd(' '));
+                result.Add(builder
+                    .ToString()
+                    .TrimEnd(' '));
             }
 
             return result;
